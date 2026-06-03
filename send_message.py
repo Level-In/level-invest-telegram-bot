@@ -1,6 +1,9 @@
 import requests
 
-TOKEN = "8816834202:AAGsK0NYDf3ju09wIg-lBC7WsShFhkbJ2WM"
+import os
+import requests
+
+TOKEN = os.environ["TELEGRAM_8816834202:AAGsK0NYDf3ju09wIg-lBC7WsShFhkbJ2WM"]
 
 CHAT_IDS = [
     "-1004231126426",  # GDAŃSK
