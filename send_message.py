@@ -21,7 +21,7 @@ Trzymamy tempo i działamy dalej! 🚀"""
 
 for chat_id in CHAT_IDS:
     requests.post(
-        f"https://api.telegram.org/bot8816834202:AAGsK0NYDf3ju09wIg-lBC7WsShFhkbJ2WM/sendMessage",
+        f"https://api.telegram.org/bot8816834202:AAHKy3lpKXN7CUU6kVPR1RKAG9xwI-XY03Y/sendMessage",
         data={
             "chat_id": chat_id,
             "text": MESSAGE
