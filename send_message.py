@@ -1,5 +1,3 @@
-import requests
-
 import os
 import requests
 
@@ -20,12 +18,13 @@ Przypominamy o aktualizacji aktywności do godziny 20:00 ⏰📲
 Trzymamy tempo i działamy dalej! 🚀"""
 
 for chat_id in CHAT_IDS:
-    requests.post(
-        f"https://api.telegram.org/bot8816834202:AAHKy3lpKXN7CUU6kVPR1RKAG9xwI-XY03Y/sendMessage",
+    response = requests.post(
+        f"https://api.telegram.org/bot{TOKEN}/sendMessage",
         data={
             "chat_id": chat_id,
             "text": MESSAGE
         }
     )
+    print(chat_id, response.status_code, response.text)
 
 print("Wiadomości wysłane")
