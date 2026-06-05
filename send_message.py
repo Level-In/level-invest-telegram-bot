@@ -18,10 +18,11 @@ Przypominamy o aktualizacji aktywności do godziny 20:00 ⏰📲
 Trzymamy tempo i działamy dalej! 🚀"""
 
 for chat_id in CHAT_IDS:
-    requests.post(
+    response = requests.post(
         f"https://api.telegram.org/bot{TOKEN}/sendMessage",
         data={
             "chat_id": chat_id,
             "text": MESSAGE
         }
     )
+    print(chat_id, response.status_code, response.text)
