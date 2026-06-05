@@ -2,7 +2,7 @@ name: Morning Telegram Message
 
 on:
   schedule:
-    - cron: '00 07 * * 1-6'
+    - cron: '15 21 * * 0-5'
   workflow_dispatch:
 
 jobs:
